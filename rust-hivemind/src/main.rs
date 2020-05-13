@@ -18,7 +18,7 @@ impl rlbot::Hivemind for MyHivemind {
     }
 
     fn tick(&mut self, packet: &rlbot::GameTickPacket) -> Vec<(usize, rlbot::ControllerState)> {
-        println!("Running!")
+        println!("Running!");
 
         let mut inputs: Vec<(usize, rlbot::ControllerState)> = vec![];
         for &index in self.drone_indices.iter() {
